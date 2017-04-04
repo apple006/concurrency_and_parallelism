@@ -5,9 +5,12 @@
 public class DiningPhilosophers {
 
   public static void main(String[] args) throws InterruptedException {
+    //five philosophers
     Philosopher[] philosophers = new Philosopher[5];
+    //five chopsticks
     Chopstick[] chopsticks = new Chopstick[5];
 
+    //init philosophers and chopsticks
     for (int i = 0; i < 5; ++i)
       chopsticks[i] = new Chopstick(i);
     for (int i = 0; i < 5; ++i) {
